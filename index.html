@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <div class="container">
+        <!-- start topbar -->
+      <div class="topbar">
+        <div class="logo">
+          <h2>Brand.</h2>
+        </div>
+        <div class="search">
+          <input type="text" id="search" placeholder="search here" />
+          <label for="search">
+            <i class="fas fa-search"></i>
+          </label>
+        </div>
+        <i class="fas fa-bell"></i>
+        <div class="user">
+          <img src="img_299586.png" alt="" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- start sidebar -->
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fas fa-th-large"></i>
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>Students</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <div>Teachers</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-chart-bar"></i>
+              <div>Analytics</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-users"></i>
+              <div>Employees</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-hand-holding-usd"></i>
+              <div>Earnings</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cog"></i>
+              <div>Setting</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-question"></i>
+              <div>Help</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- start main -->
+      <main class="main">
+        <div class="cards">
+          <div class="card">
+            <div class="card__content">
+              <div class="number">1217</div>
+              <div class="card__name">student</div>
+            </div>
+            <div class="icon__box">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__content">
+              <div class="number">42</div>
+              <div class="card__name">Teacher</div>
+            </div>
+            <div class="icon__box">
+              <i class="fa-solid fa-chalkboard-teacher"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__content">
+              <div class="number">68</div>
+              <div class="card__name">Employees</div>
+            </div>
+            <div class="icon__box">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__content">
+              <div class="number">45</div>
+              <div class="card__name">Earnings</div>
+            </div>
+            <div class="icon__box">
+              <i class="fa-solid fa-dollar-sign"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="charts">
+          <div class="chart">
+            <h2>Earnings (past 12 months)</h2>
+            <canvas id="lineChart"></canvas>
+          </div>
+
+          <!-- <div class="chart" id="doughnut__chart">
+            <h2>Employees</h2>
+            <canvas id="doughnut"></canvas>
+          </div> -->
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main2.js"></script>
+  </body>
+</html>
